@@ -483,6 +483,11 @@ div.topic {
     margin-top: 0.4em;
 }
 
+div.code-block-caption {
+    color: #4682B4;
+    background-color: #c7d9e8;
+}
+
 {% if theme_appendcss %}
 /* appendcss: */
 {{ theme_appendcss }}
