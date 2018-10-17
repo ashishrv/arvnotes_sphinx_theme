@@ -16,8 +16,13 @@ div.related {
     border-bottom: 1px solid #ccc;
     margin-top: 0.5em;
     overflow: auto;
-    width: 100%
+    width: 80%
 }
+
+div.document {
+    width: 80%
+}
+
 div.related:first-child {
     border-bottom: 0;
 }
@@ -25,6 +30,7 @@ div.related:first-child {
 div.related a:hover {
     color: #0095C4;
 }
+
 
 div.sphinxsidebar {
     background-color: #ffffff;
@@ -84,18 +90,18 @@ div.body h1, div.body h2, div.body h3 {
 }
 
 div.body h1 {
-    background-color: aliceblue;
-    border-bottom: 1px solid #D8E4EF;
+    background-color: #F7F2E0;
+    border-bottom: 1px solid #F3E2A9;
 }
 
 div.body h2 {
     padding: .2em 0;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #B18904;
 }
 
 div.body hr {
     border: 0;
-    background-color: #ccc;
+    background-color: #B18904;
     height: 1px;
 }
 
@@ -250,7 +256,7 @@ pre, code, tt {
 {% if theme_extrastyling in [true, 'true', 'yes'] %}
 div.body pre {
     border: 1px solid aliceblue;
-    background-color: #f9fcff;
+    background-color: #FAFAFA;
     white-space: pre-wrap;
     /* css-3 */
     white-space: -moz-pre-wrap;
@@ -264,7 +270,7 @@ div.body pre {
 }
 {% endif %}
 div.viewcode-block:target {
-    background-color: #FFF4E6;
+    background-color: #FAFAFA;
 }
 .toctree-l1 {
     font-size: 115%;
@@ -293,18 +299,25 @@ div.viewcode-block:target {
 .toctree-l2.current * {
     color: #000;
 }
-pre, table, img {
+pre, table {
     box-shadow: 1px 1px 3px #efefef;
 }
 .sphinxsidebar {
     box-shadow: 0px 0px 2px #999;
 }
-img, div.figure {
+div.figure {
     box-shadow: 1px 1px 6px #ccc;
     margin: 5px auto 7px auto;
     display: block;
     max-width: 100%;
 }
+
+img {
+    margin: 5px auto 7px auto;
+    display: block;
+    max-width: 100%;
+}
+
 img:active {
     max-width: inherit;
 }
@@ -340,7 +353,7 @@ code, tt {
 }
 {% if theme_extrastyling not in [true, 'true', 'yes'] %}
 p code.docutils.literal {
-    background-color: #ECF0F3;
+    background-color: #FAFAFA;
     padding: 0px 1px;
 }
 p code.docutils.xref {
@@ -389,7 +402,7 @@ div.related ul {
     }
 {% endif %}
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 468px) {
     div.related:first-child li.responsive-menu {
         display: inline-block;
     }
@@ -486,6 +499,10 @@ div.topic {
 div.code-block-caption {
     color: #4682B4;
     background-color: #c7d9e8;
+}
+
+div.local {
+    background-color: #F8ECE0;
 }
 
 {% if theme_appendcss %}
