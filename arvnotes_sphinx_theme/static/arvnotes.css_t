@@ -505,6 +505,10 @@ div.local {
     background-color: #F8ECE0;
 }
 
+div.sphinxsidebar {
+    height: 90vh;
+}
+
 {% if theme_appendcss %}
 /* appendcss: */
 {{ theme_appendcss }}
