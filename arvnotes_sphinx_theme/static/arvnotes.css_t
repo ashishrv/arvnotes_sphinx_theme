@@ -257,6 +257,9 @@ div.sphinxsidebar,
 }
 pre, code, tt {
     font-family: {{ theme_codefont }};
+    font-size: 0.7em;
+    font-weight: normal;
+    line-height: normal;
 }
 {% if theme_extrastyling in [true, 'true', 'yes'] %}
 div.body pre {
