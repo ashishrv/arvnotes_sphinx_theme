@@ -261,6 +261,14 @@ pre, code, tt {
     font-weight: normal;
     line-height: normal;
 }
+
+code {
+    font-family: {{ theme_codefont }};
+    font-weight: normal;
+    line-height: normal;
+}
+
+
 {% if theme_extrastyling in [true, 'true', 'yes'] %}
 div.body pre {
     border: 0.4px solid #AAAA;
