@@ -257,7 +257,7 @@ div.sphinxsidebar,
 }
 pre, code, tt {
     font-family: {{ theme_codefont }};
-    font-size: 0.7em;
+    font-size: 0.8em;
     font-weight: normal;
     line-height: normal;
 }
