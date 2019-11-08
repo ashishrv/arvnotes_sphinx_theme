@@ -3,11 +3,15 @@ a tt {
     font-weight: normal;
 }
 body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
     background-color: white;
     margin-left: 1em;
     margin-right: 1em;
-    line-height: 1.5;
+    line-height: 1.65em;
 }
+
 
 
 div.related {
@@ -70,7 +74,7 @@ div.sphinxsidebar input[type=text] {
 
 div.body {
     padding: 0 0 0 1.2em;
-    max-width: 1150px;
+    max-width: 1300px;
 }
 
 div.body p {
@@ -254,9 +258,9 @@ div.sphinxsidebar,
 pre, code, tt {
     font-family: {{ theme_codefont }};
 }
-{% if theme_extrastyling in [true, 'true', 'yes'] %}
+{% if theme_extrastyling in [true, 'true    ', 'yes'] %}
 div.body pre {
-    border: 1px solid aliceblue;
+    border: 0.4px solid #AAAA;
     background-color: #FAFAFA;
     white-space: pre-wrap;
     /* css-3 */
