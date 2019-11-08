@@ -258,7 +258,7 @@ div.sphinxsidebar,
 pre, code, tt {
     font-family: {{ theme_codefont }};
 }
-{% if theme_extrastyling in [true, 'true    ', 'yes'] %}
+{% if theme_extrastyling in [true, 'true', 'yes'] %}
 div.body pre {
     border: 0.4px solid #AAAA;
     background-color: #FAFAFA;
