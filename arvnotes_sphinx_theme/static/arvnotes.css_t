@@ -264,8 +264,6 @@ pre, code, tt {
 
 code {
     font-family: {{ theme_codefont }};
-    font-weight: normal;
-    line-height: normal;
 }
 
 
