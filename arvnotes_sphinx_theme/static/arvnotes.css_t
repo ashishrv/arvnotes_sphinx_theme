@@ -266,6 +266,11 @@ code {
     font-family: {{ theme_codefont }};
 }
 
+span.pre {
+    font-size: 1.1em;
+    font-weight: 300;
+}
+
 
 {% if theme_extrastyling in [true, 'true', 'yes'] %}
 div.body pre {
