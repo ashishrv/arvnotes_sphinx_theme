@@ -3,7 +3,7 @@ a tt {
     font-weight: normal;
 }
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
     font-size: 1.1em;
     font-weight: 300;
     background-color: white;
@@ -27,6 +27,10 @@ div.document {
     width: 80%
 }
 
+div.documentwrapper {
+    background-color: {{ theme_sidebarbgcolor }};
+}
+
 div.related:first-child {
     border-bottom: 0;
 }
@@ -37,9 +41,8 @@ div.related a:hover {
 
 
 div.sphinxsidebar {
-    background-color: #ffffff;
-    border-radius: 5px;
-    line-height: 130%;
+    background-color: {{ theme_sidebarbgcolor }};
+    border-radius: 0px;
     font-size: smaller;
     position: relative;
 }
@@ -95,13 +98,15 @@ div.body h1, div.body h2, div.body h3 {
 }
 
 div.body h1 {
-    background-color: #F7F2E0;
-    border-bottom: 1px solid #F3E2A9;
+    background-color: {{ theme_body_h1 }};
+    border-bottom: 1px solid {{ theme_body_h1_border }};
+    text-align: center;
 }
 
 div.body h2 {
     padding: .2em 0;
-    border-bottom: 1px solid #B18904;
+    background-color: {{ theme_body_h2 }};
+    border-bottom: 1px solid {{ theme_body_h2_border }};
 }
 
 div.body hr {
@@ -320,9 +325,8 @@ div.viewcode-block:target {
 pre, table {
     box-shadow: 1px 1px 3px #efefef;
 }
-.sphinxsidebar {
-    box-shadow: 0px 0px 2px #999;
-}
+
+
 div.figure {
     box-shadow: 1px 1px 6px #ccc;
     margin: 5px auto 7px auto;
@@ -443,6 +447,7 @@ div.related ul {
     }
     div.body {
         padding: 0;
+        background-color: {{ theme_sidebarbgcolor }};
     }
     #sidebarbutton {
         display: none;
@@ -520,7 +525,7 @@ div.code-block-caption {
 }
 
 div.local {
-    background-color: #F8ECE0;
+    background-color: {{ theme_localcontent_bgcolor }};
 }
 
 div.sphinxsidebar {
