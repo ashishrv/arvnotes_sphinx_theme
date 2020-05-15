@@ -3,7 +3,7 @@ a tt {
     font-weight: normal;
 }
 body {
-    font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+    font-family:  {{ theme_body_font }};
     font-size: 1.1em;
     font-weight: 300;
     background-color: white;
@@ -65,7 +65,7 @@ div.sphinxsidebar a:hover {
 }
 
 div.sphinxsidebar input {
-    font-family: 'Lucida Grande',Arial,sans-serif;
+    font-family: {{ theme_sidebar_font }};
     border: 1px solid #999999;
     font-size: smaller;
     border-radius: 3px;
@@ -78,6 +78,11 @@ div.sphinxsidebar input[type=text] {
 div.body {
     padding: 0 0 0 1.2em;
     max-width: 1300px;
+    border-left: 2px solid {{ theme_bodyleftborder }};
+}
+
+div.section {
+
 }
 
 div.body p {
@@ -109,9 +114,13 @@ div.body h2 {
     border-bottom: 1px solid {{ theme_body_h2_border }};
 }
 
+div.body h3 {
+    border-bottom: 1px solid {{ theme_body_h2_border }};
+}
+
 div.body hr {
     border: 0;
-    background-color: #B18904;
+    background-color: {{ theme_hr_bgcolor }};
     height: 1px;
 }
 
@@ -169,8 +178,8 @@ p:target {
 {% endif %}
 
 tt, pre {
-    font-family: monospace, sans-serif;
-    font-size: 96.5%;
+    font-family: {{ theme_code_font }};
+    font-size: 100%;
 }
 
 div.body tt {
@@ -258,17 +267,17 @@ div.footer a:hover {
 
 div.sphinxsidebar,
 .related a {
-    font-family: {{ theme_headfont }};
+    font-family: {{ theme_head_font }};
 }
 pre, code, tt {
-    font-family: {{ theme_codefont }};
+    font-family: {{ theme_code_font }};
     font-size: 0.8em;
     font-weight: normal;
     line-height: normal;
 }
 
 code {
-    font-family: {{ theme_codefont }};
+    font-family: {{ theme_code_font }};
 }
 
 span.pre {
@@ -520,8 +529,8 @@ div.topic {
 }
 
 div.code-block-caption {
-    color: #4682B4;
-    background-color: #c7d9e8;
+    color: {{ theme_code_block_caption_textcolor }};
+    background-color: {{ theme_code_block_caption_bgcolor }};
 }
 
 div.local {
