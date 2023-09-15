@@ -1072,10 +1072,44 @@ div.topic {
     background-color: #eee;
 }
 
-div.warning {
-    background-color: #ffe4e4;
-    border: 1px solid #f66;
+
+
+div.admonition.error {
+    background-color: #f2d7d5 ;
+    border: 1px solid #cd6155 ;
 }
+
+div.admonition.danger {
+    background-color: #fadbd8 ;
+    border: 1px solid #ec7063 ;
+}
+
+div.warning {
+    background-color: #f6ddcc ;
+    border: 1px solid #dc7633 ;
+}
+
+div.admonition.caution {
+    background-color: #fdebd0 ;
+    border: 1px solid #f5b041 ;
+}
+
+div.admonition.attention {
+    background-color: #fef9e7 ;
+    border: 1px solid #f4d03f ;
+}
+
+
+div.admonition.hint {
+    background-color: #d4efdf ;
+    border: 1px solid #73c6b6 ;
+}
+
+div.admonition.important {
+    background-color: #d6eaf8 ;
+    border: 1px solid #5499c7 ;
+}
+
 
 p.admonition-title {
     display: inline;
