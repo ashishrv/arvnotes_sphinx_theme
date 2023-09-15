@@ -6,6 +6,7 @@ Sphinx theme for maintaining notes
 
 ```bash
 pip install git+https://github.com:ashishrv/arvnotes_sphinx_theme.git
+pipenv install "git+https://github.com/ashishrv/arvnotes_sphinx_theme.git#egg=arvnotes-sphinx-theme"
 ```
 
 or

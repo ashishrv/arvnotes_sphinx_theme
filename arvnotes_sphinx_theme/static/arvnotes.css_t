@@ -1136,9 +1136,22 @@ div.code-block-caption {
 
 /* importurl("classic.css"); */
 
+
+/*
+ *
+ * ARV Sphinx Theme
+ *
+*/
+
 a tt {
     font-weight: normal;
 }
+
+.col {
+   padding: 10px;
+}
+
+
 body {
     font-family:  {{ theme_body_font }};
     font-size: 1.1em;
@@ -1148,7 +1161,6 @@ body {
     margin-right: 1em;
     line-height: 1.65em;
 }
-
 
 
 div.related {
@@ -1233,6 +1245,7 @@ div.body h1, div.body h2, div.body h3, div.body h4, div.body h5, div.body h6 {
     margin: 0;
     border: 0;
     padding: 0.3em 0;
+    font-family: {{ body_font }};
 }
 
 div.body h1, div.body h2, div.body h3 {
@@ -1243,25 +1256,22 @@ div.body h1 {
     font-weight: 900;
     border-bottom: 4px solid #006663;
     text-align: center;
-    background-color: {{ theme_body_h1 }};
     background-image:  linear-gradient(to left, #DECBA4, #3E5151);
-    border-bottom: 1px solid {{ theme_body_h1_border }};
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
-
 }
 
 div.body h2 {
     font-weight: 800;
     padding: .2em 0;
-    background-color: {{ theme_body_h2 }};
-    border-bottom: 1px solid {{ theme_body_h2_border }};
+    border-top: 2px solid {{ theme_body_h2_border }};
+    border-bottom: 2px solid {{ theme_body_h2_border }};
 }
 
 div.body h3 {
     font-weight: 700;
-    border-bottom: 1px solid {{ theme_body_h2_border }};
+    border-bottom: 2px solid {{ theme_body_h2_border }};
 }
 
 div.body h4 {
