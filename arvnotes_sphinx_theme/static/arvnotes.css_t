@@ -1245,7 +1245,7 @@ div.body h1, div.body h2, div.body h3, div.body h4, div.body h5, div.body h6 {
     margin: 0;
     border: 0;
     padding: 0.3em 0;
-    font-family: {{ body_font }};
+    font-family: {{ theme_head_font }};
 }
 
 div.body h1, div.body h2, div.body h3 {
