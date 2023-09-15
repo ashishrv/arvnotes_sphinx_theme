@@ -1472,6 +1472,7 @@ div.body pre {
     /* Internet Explorer 5.5+ */
 }
 {% endif %}
+
 div.viewcode-block:target {
     background-color: #FAFAFA;
 }
@@ -1541,7 +1542,7 @@ li > img {
 
 h1, h2, h3, h4, h5, h6 {
     {% if theme_extrastyling in [true, 'true', 'yes'] %}
-    text-shadow: 1px 1px 2px #ddd;
+    #text-shadow: 1px 1px 2px #ddd;
     {% endif %}
     font-weight: bold;
     color: #333;
@@ -1553,6 +1554,7 @@ code, tt {
     font-weight: bold;
     {% endif %}
 }
+
 {% if theme_extrastyling not in [true, 'true', 'yes'] %}
 p code.docutils.literal {
     background-color: #FAFAFA;
@@ -1596,12 +1598,13 @@ div.related ul {
 }
 
 {% if theme_sidebarwide|tobool %}
-    div.sphinxsidebar {
-        width: 350px;
-    }
-    div.bodywrapper {
-        margin-left: 350px;
-    }
+div.sphinxsidebar {
+    width: 350px;
+}
+
+div.bodywrapper {
+    margin-left: 350px;
+}
 {% endif %}
 
 @media only screen and (max-width: 468px) {
@@ -1710,6 +1713,28 @@ div.local {
 
 div.sphinxsidebar {
     height: 90vh;
+}
+
+div.body pre {
+   overflow-x: auto;
+}
+
+div.body pre::-webkit-scrollbar {
+   background-color: #ccafaf;
+}
+div.body pre::-webkit-scrollbar-thumb {
+   background: #3a1616;
+}
+div.body pre {
+   letter-spacing: .5px;
+   background: #ffffff;
+   padding: 20px;
+   border-left: 10px solid #c1c1c1;
+}
+
+div.body li {
+    font-family: "Lato", Arial, sans-serif;
+    font-weight: 300;
 }
 
 {% if theme_appendcss %}
